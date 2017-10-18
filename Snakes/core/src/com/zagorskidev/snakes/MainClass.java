@@ -29,7 +29,7 @@ public class MainClass extends ApplicationAdapter {
 	private Random gen;
 	
 	private long lastMove;
-	private int moveInterval = 0;
+	private int moveInterval = 50;
 	
 	private long lastFood;
 	private int foodInterval = 1000;
@@ -50,7 +50,7 @@ public class MainClass extends ApplicationAdapter {
 		
 		walls.add(new Wall(field, Color.GRAY));
 		
-		//snakes.add(new Snake(snakeLength, Color.GREEN, new Point(64, 10), new Direction(0, 1), Gdx.input));
+		snakes.add(new Snake(snakeLength, Color.GREEN, new Point(64, 10), new Direction(0, 1), Gdx.input));
 		
 		for(int i=0; i<3; i++)
 			snakes.add(new Snake(snakeLength, Color.PURPLE, new Point(gen.nextInt(30)+3, gen.nextInt(90)+3), new Direction(1, 0), null));
