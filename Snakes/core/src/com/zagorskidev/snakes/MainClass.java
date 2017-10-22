@@ -29,7 +29,7 @@ public class MainClass extends ApplicationAdapter {
 	private Random gen;
 	
 	private long lastMove;
-	private int moveInterval = 50;
+	private int moveInterval = 90;
 	
 	private long lastFood;
 	private int foodInterval = 1000;
@@ -52,9 +52,9 @@ public class MainClass extends ApplicationAdapter {
 		
 		snakes.add(new Snake(snakeLength, Color.GREEN, new Point(64, 10), new Direction(0, 1), Gdx.input));
 		
-		for(int i=0; i<3; i++)
-			snakes.add(new Snake(snakeLength, Color.PURPLE, new Point(gen.nextInt(30)+3, gen.nextInt(90)+3), new Direction(1, 0), null));
-		for(int i=0; i<3; i++)
+		for(int i=0; i<1; i++)
+			snakes.add(new Snake(snakeLength, Color.BLUE, new Point(gen.nextInt(30)+3, gen.nextInt(90)+3), new Direction(1, 0), null));
+		for(int i=0; i<1; i++)
 			snakes.add(new Snake(snakeLength, Color.RED, new Point(gen.nextInt(30)+90, gen.nextInt(90)+3), new Direction(-1, 0), null));
 		
 		lastMove = TimeUtils.millis()+3000;
@@ -74,6 +74,9 @@ public class MainClass extends ApplicationAdapter {
 			
 			lastMove = TimeUtils.millis();
 		}
+		
+		if(snakes.get(0).isToKill())
+			this.moveInterval=0;
 		
 		if(TimeUtils.timeSinceMillis(lastFood)>foodInterval) {
 			

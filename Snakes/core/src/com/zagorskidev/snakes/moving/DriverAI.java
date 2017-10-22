@@ -72,7 +72,7 @@ public class DriverAI implements Movable {
 		lastTargets.addFirst(currTarget);
 		currTarget.untarget();
 		currTarget = null;
-		if(lastTargets.size()>3)
+		if(lastTargets.size()>1)
 			lastTargets.removeLast();
 	}
 	

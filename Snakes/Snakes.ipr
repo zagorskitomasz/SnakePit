@@ -51,6 +51,7 @@
       <module filepath="$PROJECT_DIR$/Snakes.iml" fileurl="file://$PROJECT_DIR$/Snakes.iml"/>
       <module filepath="$PROJECT_DIR$/core/core.iml" fileurl="file://$PROJECT_DIR$/core/core.iml"/>
       <module filepath="$PROJECT_DIR$/desktop/desktop.iml" fileurl="file://$PROJECT_DIR$/desktop/desktop.iml"/>
+      <module filepath="$PROJECT_DIR$/html/html.iml" fileurl="file://$PROJECT_DIR$/html/html.iml"/>
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-type="JavaSDK" assert-jdk-15="true" project-jdk-name="1.8">

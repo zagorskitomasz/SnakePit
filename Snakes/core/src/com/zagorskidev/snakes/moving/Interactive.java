@@ -22,13 +22,13 @@ public class Interactive implements Movable {
 	@Override
 	public boolean move(Segment moved, int[][] field, List<Food> food) {
 		
-		if(input.isKeyPressed(Input.Keys.UP))
+		if(input.isKeyPressed(Input.Keys.W))
 			pressedUp();
-		else if(input.isKeyPressed(Input.Keys.DOWN))
+		else if(input.isKeyPressed(Input.Keys.S))
 			pressedDown();
-		else if(input.isKeyPressed(Input.Keys.LEFT))
+		else if(input.isKeyPressed(Input.Keys.A))
 			pressedLeft();
-		else if(input.isKeyPressed(Input.Keys.RIGHT))
+		else if(input.isKeyPressed(Input.Keys.D))
 			pressedRight();
 		
 		if(field[moved.getX()+this.direction.getXDir()]
