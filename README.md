@@ -16,7 +16,8 @@ You can watch short video of application running.
 
 # How can I run it?
 
-You have to download repository and run it with Gradle or import to your IDE.
+You can play this game in web browser. You are controlling green snake with W A S D keys on keyboard.
+http://zagorskidev.cba.pl/
 
 # How can it be improved?
 
