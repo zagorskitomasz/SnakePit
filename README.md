@@ -1,3 +1,5 @@
+# AI experiment / GDX library testing / project abandoned
+
 # SnakePit
 
 ![Image](https://zagorskidev.files.wordpress.com/2017/10/zrzut-ekranu-z-2017-10-18-17-15-22.png)
